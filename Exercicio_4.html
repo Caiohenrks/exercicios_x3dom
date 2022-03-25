@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Exemplo</title>
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
+    </link>
+</head>
+
+<body>
+
+
+    <x3d width='500px' height='500px'>
+        <scene>
+
+            <!-- mesa -->
+            <transform translation='25 10 30'>
+                <shape>
+                    <appearance>
+                        <imageTexture url='madeira.jpg' />
+                    </appearance>
+                    <box size="60 4 130" />
+                </shape>
+            </transform>
+
+            <!-- Pé da mesa-->
+            <group DEF="pe_da_mesa">
+                <transform translation='50 -15 90'>
+                    <shape>
+                        <appearance>
+                            <imageTexture url='aluminio.jpg' />
+                        </appearance>
+                        <box size='4 50 4' />
+                    </shape>
+                </transform>
+            </group>
+
+            <transform translation='-50 0 0'>
+                <shape USE='pe_da_mesa' />
+            </transform>
+
+            <transform translation='0 0 -120'>
+                <shape USE='pe_da_mesa' />
+            </transform>
+
+            <transform translation='-50 0 -120'>
+                <shape USE='pe_da_mesa' />
+            </transform>
+
+        </scene>
+    </x3d>
+
+</body>
+
+</html>

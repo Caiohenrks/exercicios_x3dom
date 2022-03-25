@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Exemplo</title>
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
+    </link>
+</head>
+
+<body>
+
+
+    <x3d width='500px' height='500px'>
+        <scene>
+
+            <!-- bancada -->
+            <shape>
+                <appearance>
+                    <material diffuseColor='0.54 0.27 0.07' />
+                </appearance>
+                <box size="106 2 49" />
+            </shape>
+
+            <!-- perna 1 -->
+            <transform translation='52 -39 0'>
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0.54 0.27 0.07' />
+                    </appearance>
+                    <box size="2 79 49" />
+                </shape>
+            </transform>
+
+            <!-- perna 2 -->
+            <transform translation='-52 -39 0'>
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0.54 0.27 0.07' />
+                    </appearance>
+                    <box size="2 79 49" />
+                </shape>
+            </transform>
+
+            <!-- pé da mesa 1 -->
+            <transform translation='-52 -79 20'>
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0 0 0' />
+                    </appearance>
+                    <cylinder radius='1.5' height='2' />
+                </shape>
+            </transform>
+
+            <!-- pé da mesa 2 -->
+            <transform translation='-52 -79 -20'>
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0 0 0' />
+                    </appearance>
+                    <cylinder radius='1.5' height='2' />
+                </shape>
+            </transform>
+            <!-- pé da mesa 3 -->
+            <transform translation='52 -79 20'>
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0 0 0' />
+                    </appearance>
+                    <cylinder radius='1.5' height='2' />
+                </shape>
+            </transform>
+            <!-- pé da mesa 4 -->
+            <transform translation='52 -79 -20'>
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0 0 0' />
+                    </appearance>
+                    <cylinder radius='1.5' height='2' />
+                </shape>
+            </transform>
+
+            <!-- Teclado -->
+            <transform translation="0 2 10" translate="1 0 1">
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0 0 0' />
+                        <imageTexture url="https://m.media-amazon.com/images/I/61awqwlmk3L._AC_SY450_.jpg">
+                    </appearance>
+                    <box size="30 2 10" />
+                </shape>
+            </transform>
+
+            <!-- Monitor -->
+            <transform translation="0 20 -10" translate="1 0 1">
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0 0 0' />
+                    </appearance>
+                    <box size="40 20 3" />
+                </shape>
+            </transform>
+
+            <!-- pé do monitor-->
+            <transform translation="0 7 -10" translate="1 0 1">
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0 0 0' />
+                    </appearance>
+                    <cylinder radius="2" height='8' />
+                </shape>
+            </transform>
+
+            <!-- pé do monitor 2-->
+            <transform translation="0 2 -10" translate="1 0 1">
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0 0 0' />
+                    </appearance>
+                    <cylinder radius="6" height='2' />
+                </shape>
+            </transform>
+
+            <!-- Mousepad-->
+            <transform translation="30 1 10" rotation="111 1 1">
+                <shape>
+                    <appearance>
+                        <material diffuseColor='1 1 1' />
+                    </appearance>
+                    <box size="2 3 4"/>
+                </shape>
+            </transform>
+
+
+
+        </scene>
+    </x3d>
+
+</body>
+
+</html>
